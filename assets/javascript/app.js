@@ -3,6 +3,9 @@ var correct = 0;
 var incorrect = 0;
 var intervalId; 
 var timer = 5; 
+var answer = 0;
+var questions = 0;
+var numOfQuestions = [];
 
 $("#questions").hide ()
 
@@ -16,19 +19,29 @@ function stop() {
     $("#questions").html("<h1>Game Over</h1> <p>Unanswered: "+ unanswered + "</p><p>Correct: " + correct + "</p><p>Incorrect:" + incorrect + "</p>");
 }
 
+
 function decrement() {
-
     timer--;
-
     $("#timer").html("<h2>" + timer + "</h2>");
-
     if (timer === 0) {
-
       stop();
-
     }
   }
 
+  function tally () {
+    var correct = 0;
+    var incorrect = 0;
+    var unaswered = 0;
+    $("questions").each(function(){
+      if ($(this).val()==="right") {
+        correct++;
+      } else $(this).val()==="wrong" {
+        incorrect++;
+      } else () { //do i need to place something here?
+        unanswered++;
+      })
+  }
+}
 
 $("#start").on("click", function () {
     console.log("start button clicked")
@@ -39,6 +52,10 @@ $("#start").on("click", function () {
 })
 
 
+if ($("#submit").on("click")) {
+  stop();
+
+}
 
 //on.click on start button begins the game CHECK 
 
@@ -61,5 +78,5 @@ $("#start").on("click", function () {
 //end page to show stats 
 
 
-// 1. create q & a's ; hide in the questions <button data-value="true">SPICE</button>
+// 1. create q & a's with radio buttons; hide in the questions <button data-value="true">SPICE</button>
 // console.log this to evaluate if it works
