@@ -32,15 +32,15 @@ function decrement() {
     var correct = 0;
     var incorrect = 0;
     var unaswered = 0;
-    $("questions").each(function(){
-      if ($(this).val()==="right") {
-        correct++;
-      } else $(this).val()==="wrong" {
-        incorrect++;
-      } else () { //do i need to place something here?
-        unanswered++;
-      })
-  }
+//     $("questions").each(function(){
+//       if ($(this).val()==="right") {
+//         correct++;
+//       } else $(this).val()==="wrong" {
+//         incorrect++;
+//       } else () { //do i need to place something here?
+//         unanswered++;
+//       })
+//   }
 }
 
 $("#start").on("click", function () {
@@ -52,10 +52,10 @@ $("#start").on("click", function () {
 })
 
 
-if ($("#submit").on("click")) {
-  stop();
+// if ($("#submit").on("click")) {
+//   stop();
 
-}
+// }
 
 //on.click on start button begins the game CHECK 
 
