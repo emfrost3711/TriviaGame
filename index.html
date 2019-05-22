@@ -4,64 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>STD Trivia</title>
 </head>
 <body>
-    <h1>Basic Trivia Game</h1>
-    <div id="main-container">
-        <button id="start">Start</button>
+    <h1>STD Trivia Game</h1>
+    <div class="container-fluid" id="main-container">
+        <div class="btn">
+        <button type="button" class="btn btn-danger" id="start" >Start</button>
         <div id="timer"></div>
-        
+        </div>
+
         <div id="questions"> 
             <p> 1. What is the most common curable STD?<br>
-                <input type="radio" option value="right">a. Trichomoniasis</option><br>
-                <input type="radio" option value="wrong">b. Herpes</option><br>
-                <input type="radio" option value="wrong">c. Genital Warts</option><br>
-                <input type="radio" option value="wrong">d. Scabies</option><br>
+                <input type="radio" option value="right"> a. Trichomoniasis</option><br>
+                <input type="radio" option value="wrong"> b. Herpes</option><br>
+                <input type="radio" option value="wrong"> c. Genital Warts</option><br>
+                <input type="radio" option value="wrong"> d. Scabies</option><br>
             </p>
             <p> 2. Most people who have sex contract this disease at some point in their lives -- it is the most common STD.<br>
-                <input type="radio" option value="wrong">a. Molloscum contagiosum</option><br>
-                <input type="radio" option value="wrong">b. Herpes</option><br>
-                <input type="radio" option value="right">c. HPV</option><br>
-                <input type="radio" option value="wrong">d. Syphilis</option><br>
+                <input type="radio" option value="wrong"> a. Molloscum contagiosum</option><br>
+                <input type="radio" option value="wrong"> b. Herpes</option><br>
+                <input type="radio" option value="right"> c. HPV</option><br>
+                <input type="radio" option value="wrong"> d. Syphilis</option><br>
             </p>
             <p> 3. All of the following are veneral diseases caused by parasites except:<br>
-                <input type="radio" option value="wrong">a. Pubic lice/option><br>
-                <input type="radio" option value="wrong">b. Scabies</option><br>
-                <input type="radio" option value="right">c. Molluscum contagiosum</option><br>
-                <input type="radio" option value="wrong">d. Trichomoniasis</option><br>
+                <input type="radio" option value="wrong"> a. Pubic lice/option><br>
+                <input type="radio" option value="wrong"> b. Scabies</option><br>
+                <input type="radio" option value="right"> c. Molluscum contagiosum</option><br>
+                <input type="radio" option value="wrong"> d. Trichomoniasis</option><br>
             </p>
             <p> 4. No sexual contact required to get this disease -- you can get it from sharing a towel or touching an infected area on someone else.<br>
-                <input type="radio" option value="wrong">a. Herpes</option><br>
-                <input type="radio" option value="right">b. Molloscum Contagiosum</option><br>
-                <input type="radio" option value="wrong">c. HIV</option><br>
-                <input type="radio" option value="wrong">d. Syphilis</option><br>
+                <input type="radio" option value="wrong"> a. Herpes</option><br>
+                <input type="radio" option value="right"> b. Molloscum Contagiosum</option><br>
+                <input type="radio" option value="wrong"> c. HIV</option><br>
+                <input type="radio" option value="wrong"> d. Syphilis</option><br>
             </p>
             <p> 5. There is currently no cure for the following diseases EXCEPT:<br>
-                <input type="radio" option value="wrong">a. HIV</option><br>
-                <input type="radio" option value="wrong">b. Genital Warts</option><br>
-                <input type="radio" option value="wrong">c. Herpes</option><br>
-                <input type="radio" option value="right">d. Syphilis</option><br>
+                <input type="radio" option value="wrong"> a. HIV</option><br>
+                <input type="radio" option value="wrong"> b. Genital Warts</option><br>
+                <input type="radio" option value="wrong"> c. Herpes</option><br>
+                <input type="radio" option value="right"> d. Syphilis</option><br>
             </p>
-            <p> 6. All of the following about the HPV vaccine are true except:
-                <input type="radio" option value="wrong">a. The HPV vaccine prevents 9 types of HPV</option><br>
-                <input type="radio" option value="wrong">b. It's recommended that people of all ages from 9 to 45 get the vaccine</option><br>
-                <input type="radio" option value="right">c. The HPV vaccine leads to people having sex at a younger age</option><br>
-                <input type="radio" option value="wrong">d. The HPV vaccine helps protect against genital warts and cancer</option><br>
+            <p> 6. All of the following about the HPV vaccine are true except:<br>
+                <input type="radio" option value="wrong"> a. The HPV vaccine prevents 9 types of HPV</option><br>
+                <input type="radio" option value="wrong"> b. It's recommended that people of all ages from 9 to 45 get the vaccine</option><br>
+                <input type="radio" option value="right"> c. The HPV vaccine leads to people having sex at a younger age</option><br>
+                <input type="radio" option value="wrong"> d. The HPV vaccine helps protect against genital warts and cancer</option><br>
             </p>
             <p> 7. Having which of the following diseases doubles your risk of contracting HIV?<br>     
-                <input type="radio" option value="wrong">a. Hepatitis B</option><br>
-                <input type="radio" option value="right">b. Herpes</option><br>
-                <input type="radio" option value="wrong">c. Syphilis</option><br>
-                <input type="radio" option value="wrong">d. Chlamydia</option><br>
+                <input type="radio" option value="wrong"> a. Hepatitis B</option><br>
+                <input type="radio" option value="right"> b. Herpes</option><br>
+                <input type="radio" option value="wrong"> c. Syphilis</option><br>
+                <input type="radio" option value="wrong"> d. Chlamydia</option><br>
             </p>
-            <p> 8. Though rare, you can technically contract all of the following diseases in your eye except for:
-                <input type="radio" option value="wrong">a. Gonorrhea</option><br>
-                <input type="radio" option value="wrong">b. Herpes</option><br>
-                <input type="radio" option value="wrong">c. Chlamydia</option><br>
-                <input type="radio" option value="right">d. Trichomonisasis</option><br>
+            <p> 8. Though rare, you can technically contract all of the following diseases in your eye except for:<br>
+                <input type="radio" option value="wrong"> a. Gonorrhea</option><br>
+                <input type="radio" option value="wrong"> b. Herpes</option><br>
+                <input type="radio" option value="wrong"> c. Chlamydia</option><br>
+                <input type="radio" option value="right"> d. Trichomoniasis</option><br>
             </p>
-        <button id="submit">Submit</button>
+        
+        <div class="btn">
+            <button type="button" class="btn btn-danger" id="submit" >Submit</button>
+        </div> 
         </div>
 
     </div>
@@ -69,6 +76,6 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <script src = "./assets/javascript/app.js"></script>
+    <script src = "assets/javascript/app.js"></script>
 </body>
 </html>
