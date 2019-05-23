@@ -2,7 +2,7 @@ var unanswered = 0;
 var correct = 0;
 var incorrect = 0;
 var intervalId; 
-var timer = 10; 
+var timer = 15; 
 var answer = 0;
 var questions = 0;
 var numOfQuestions = [];
@@ -19,34 +19,36 @@ function stop() {
     $("#questions").html("<h1>Game Over</h1> <p>Unanswered: " + unanswered + "</p><p>Correct: " + correct + "</p><p>Incorrect:" + incorrect + "</p>");
 }
 
-
 function decrement() {
     timer--;
     $("#timer").html("<h2>" + timer + "</h2>");
-    if (timer === 0) {
+    if (timer <= 0) {
       stop();
     }
   }
 
+  
 function tally(answer) {
     // $("questions").each(function(){
       if (answer.val()==="right") {
         correct++;
       } else if (answer.val()==="wrong") {
         incorrect++;
-      } else {
+      } else { 
         unanswered++;
       }
-    // });
   }
 
 $("#start").on("click", function () {
     console.log("start button clicked")
+    $("#start").remove();
     $("#questions").show ();
     run ();
-    $("input").on("click", function (event){tally ($(this))})
+    $("input").on("click", function (event){tally($(this))})
 })
 
-//on click event for submit to run stop function
 
-$("#submit").on("click", function(){stop()});
+$("#submit").on("click", function(){
+  event.preventDefault();
+  stop();
+});
